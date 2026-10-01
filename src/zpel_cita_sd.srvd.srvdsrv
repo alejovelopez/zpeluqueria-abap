@@ -1,0 +1,4 @@
+@EndUserText.label: 'Servicio de Citas de Peluquería'
+define service ZPEL_CITA_SD {
+  expose ZC_PEL_CITA as Cita;
+}

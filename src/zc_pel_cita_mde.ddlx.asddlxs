@@ -1,0 +1,53 @@
+@Metadata.layer: #CORE
+
+/* Header Info */
+@UI.headerInfo: {
+  typeName: 'Cita',
+  typeNamePlural: 'Citas',
+  title: { type: #STANDARD, value: 'CLIENTE_NOMBRE' },
+  description: { type: #STANDARD, value: 'SERVICIO_DESCRIPCION' }
+}
+
+annotate view ZC_PEL_CITA with
+{
+  @UI.selectionField: [{ position: 10 }]
+  @UI.lineItem: [{ position: 10, label: 'Cliente' }]
+  cliente_nombre;
+
+  @UI.selectionField: [{ position: 20 }]
+  @UI.lineItem: [{ position: 20, label: 'Servicio' }]
+  SERVICIO_DESCRIPCION;
+
+  @UI.selectionField: [{ position: 30 }]
+  @UI.lineItem: [{ position: 30, label: 'Peluquero' }]
+  PELUQUERO_NOMBRE;
+
+  @UI.selectionField: [{ position: 40 }]
+  @UI.lineItem: [{ position: 40, label: 'Fecha Inicio' }]
+  fecha_hora_inicio;
+
+  @UI.lineItem: [{ position: 50, label: 'Fecha Fin' }]
+  fecha_hora_fin;
+
+  @UI.lineItem: [{ position: 60, label: 'Estado' }]
+  estado;
+
+  /* Campos ocultos en la UI */
+  @UI.hidden: true
+  cita_id;
+
+  @UI.hidden: true
+  peluquero_id;
+
+  @UI.hidden: true
+  PELUQUERO_GENERO;
+
+  @UI.hidden: true
+  servicio_id;
+
+  @UI.hidden: true
+  duracion_min;
+
+  @UI.hidden: true
+  cliente_genero;
+}

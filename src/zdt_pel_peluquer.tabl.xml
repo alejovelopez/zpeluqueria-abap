@@ -64,6 +64,12 @@
      <MASK>  INT1</MASK>
     </DD03P>
    </DD03P_TABLE>
+   <TABL_EXTRAS>
+    <TDDAT>
+     <TABNAME>ZDT_PEL_PELUQUER</TABNAME>
+     <CCLASS>CUS_DEV_SUP_DA</CCLASS>
+    </TDDAT>
+   </TABL_EXTRAS>
   </asx:values>
  </asx:abap>
 </abapGit>
